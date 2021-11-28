@@ -1,4 +1,4 @@
-import "storybook-zeplin/register";
+// import "storybook-zeplin/register";
 module.exports = {
   stories: [
     "../../src/components/**/*.stories.@(js|jsx|ts|tsx|mdx)",
@@ -8,5 +8,8 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-links",
     "storybook-zeplin/register",
+    "@storybook/addon-viewport",
+    "@storybook/addon-ally",
+    "storybook-addon-preview/register",
   ],
 };
