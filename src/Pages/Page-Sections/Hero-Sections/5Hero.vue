@@ -385,11 +385,11 @@ export default {
     XIcon,
   },
   setup() {
-    const store = useStore();
+    " const store = useStore();";
     return {
       navigation,
-      title: computed(() => store.state.businessDetail.businessName),
-      description: computed(() => store.state.hero.description),
+      title: computed(() => "store.state.businessDetail.businessName"),
+      description: computed(() => "store.state.hero.description"),
     };
   },
 };

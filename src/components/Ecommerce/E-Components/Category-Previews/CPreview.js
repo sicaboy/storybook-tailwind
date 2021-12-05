@@ -8,6 +8,7 @@ export default {
   title: "E-Components/Category-Previews",
 };
 //
+
 export const CpreviewNo1 = () => ({
   render() {
     return <CPreview1 />;
@@ -38,4 +39,3 @@ export const CpreviewNo6 = () => ({
     return <CPreview6 />;
   },
 });
-// check again NOT DISPLAYING

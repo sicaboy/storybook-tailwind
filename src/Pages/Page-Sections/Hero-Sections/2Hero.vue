@@ -488,14 +488,14 @@ export default {
     XIcon,
   },
   setup() {
-    const store = useStore();
+    // const store = useStore();
     return {
       features,
       callsToAction,
       resources,
       recentPosts,
-      title: computed(() => store.state.businessDetail.businessName),
-      description: computed(() => store.state.hero.description),
+      title: computed(() => "store.state.businessDetail.businessName"),
+      description: computed(() => "store.state.hero.description"),
     };
   },
 };

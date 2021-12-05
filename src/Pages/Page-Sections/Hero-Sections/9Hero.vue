@@ -163,10 +163,10 @@ export default {
     StarIcon,
   },
   setup() {
-    const store = useStore();
+    // const store = useStore();
     return {
-      subheader: computed(() => store.state.hero.subheader),
-      description: computed(() => store.state.hero.description),
+      subheader: computed(() => "store.state.hero.subheader"),
+      description: computed(() => "store.state.hero.description"),
     };
   },
 };

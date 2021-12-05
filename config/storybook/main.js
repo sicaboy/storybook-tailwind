@@ -11,5 +11,6 @@ module.exports = {
     "@storybook/addon-viewport",
     "@storybook/addon-ally",
     "storybook-addon-preview/register",
+    
   ],
 };

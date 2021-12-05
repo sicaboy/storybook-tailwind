@@ -6,6 +6,7 @@ import CTA5 from "./CTA5.vue";
 import CTA6 from "./CTA6.vue";
 import CTA7 from "./CTA7.vue";
 import CTA8 from "./CTA8.vue";
+
 export default {
   title: "Cta-Sections/CTA",
 };

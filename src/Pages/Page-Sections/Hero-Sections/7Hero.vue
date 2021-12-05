@@ -389,12 +389,12 @@ export default {
     XIcon,
   },
   setup() {
-    const store = useStore();
+    // const store = useStore();
     return {
       solutions,
       navigation,
-      subheader: computed(() => store.state.hero.subheader),
-      description: computed(() => store.state.hero.description),
+      subheader: computed(() => "store.state.hero.subheader"),
+      description: computed(() => "store.state.hero.description"),
     };
   },
 };
