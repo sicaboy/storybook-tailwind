@@ -1,4 +1,9 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
+<script>
+export default {
+  props: ['imageSrc', 'title', 'subtitle', 'description', 'metrics']
+}
+</script>
+
 <template>
 	<div class="relative bg-gray-900">
 		<div class="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
@@ -6,7 +11,7 @@
 				<div class="h-full xl:relative xl:col-start-2">
 					<img
 						class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-						src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+						:src="imageSrc"
 						alt="People working on laptops"
 					/>
 					<div
@@ -25,16 +30,13 @@
 				<h2
 					class="text-sm font-semibold text-indigo-300 tracking-wide uppercase"
 				>
-					Valuable Metrics
+					{{ title }}
 				</h2>
 				<p class="mt-3 text-3xl font-extrabold text-white">
-					Get actionable data that will help grow your business
+					{{ subtitle }}
 				</p>
 				<p class="mt-5 text-lg text-gray-300">
-					Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing
-					quis in viverra tristique sem. Ornare feugiat viverra eleifend fusce
-					orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet
-					lacus nibh integer quis. Eu vulputate diam sit tellus quis at.
+          {{ description }}
 				</p>
 				<div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
 					<p v-for="item in metrics" :key="item.id">
@@ -51,40 +53,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-const metrics = [
-	{
-		id: 1,
-		stat: '8K+',
-		emphasis: 'Companies',
-		rest: 'use laoreet amet lacus nibh integer quis.',
-	},
-	{
-		id: 2,
-		stat: '25K+',
-		emphasis: 'Countries around the globe',
-		rest: 'lacus nibh integer quis.',
-	},
-	{
-		id: 3,
-		stat: '98%',
-		emphasis: 'Customer satisfaction',
-		rest: 'laoreet amet lacus nibh integer quis.',
-	},
-	{
-		id: 4,
-		stat: '12M+',
-		emphasis: 'Issues resolved',
-		rest: 'lacus nibh integer quis.',
-	},
-];
-
-export default {
-	setup() {
-		return {
-			metrics,
-		};
-	},
-};
-</script>
